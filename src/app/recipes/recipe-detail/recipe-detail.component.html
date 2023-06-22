@@ -1,11 +1,13 @@
 <div class="row">
     <div class="col-xs-12">
-        <a href="#" alt="" class="image-responsive"></a>
+        <img [src]="selectedRecipeForDetails.imagePath" 
+        alt="{{ selectedRecipeForDetails.description }}" 
+        class="image-responsive" style="max-height: 300px; max-width: 300px;">
     </div>
 </div>
 <div class="row">
     <div class="col-xs-12">
-        <h2>Recipe Name</h2>
+        <h2>{{selectedRecipeForDetails.name}}</h2>
     </div>
 </div>
 <div class="row">
@@ -23,7 +25,7 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-xs-12">Description</div>
+    <div class="col-xs-12">{{ selectedRecipeForDetails.description }}</div>
 </div>
 <div class="row">
     <div class="col-xs-12">Ingredients</div>
